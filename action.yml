@@ -1,0 +1,22 @@
+name: "Portfolio Generator"
+author: "Marcelo Solorzano"
+description: "Generates a professional portfolio from LinkedIn exported data"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "blue"
+inputs:
+  email:
+    description: "The commiter's email address"
+    required: true
+    default: ${{ github.actor }}@localhost
+  name:
+    description: "The commiter's name"
+    required: true
+    default: ${{ github.actor }}
+  branch:
+    description: "Target branch to push to"
+    required: true
+    default: "main"
