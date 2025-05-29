@@ -1,4 +1,4 @@
-name: "Portfolio Generator"
+name: "LinkedIn Portfolio Generator"
 author: "Marcelo Solorzano"
 description: "Generates a professional portfolio from LinkedIn exported data"
 runs:
